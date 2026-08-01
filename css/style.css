@@ -15,7 +15,7 @@ body{
 header{
     background-color: #6058b9;
     color:#fdfbfb;
-    padding:30px;
+    padding:10px;
     text-align:center;
 }
 hr{
@@ -28,4 +28,12 @@ nav{
     margin-top: 20px;
     flex-wrap: wrap;
     display: flex;
+}
+nav a{
+    color: #6058b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
 }
