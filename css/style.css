@@ -1,27 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-body{
-    font-family: Arial,Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #fdfbfb;
     color: #333;
     padding: 20px;
 }
-header{
+
+header {
     background-color: #6058b9;
-    color:#fdfbfb;
-    padding:10px;
-    text-align:center;
+    color: #fdfbfb;
+    padding: 10px;
+    text-align: center;
 }
-hr{
+
+hr {
     margin: 20px 0;
 }
-nav{
+
+nav {
     background-color: #fdfbfb;
     justify-content: center;
     gap: 25px;
@@ -29,11 +32,112 @@ nav{
     flex-wrap: wrap;
     display: flex;
 }
-nav a{
+
+nav a {
     color: #6058b9;
     text-decoration: none;
     font-weight: bold;
 }
-nav a:hover{
+
+nav a:hover {
     text-decoration: underline;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #08a7c0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #fdfbfb;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #720303;
+    margin-bottom: 10px;
+}
+
+.banner {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+article {
+    background-color: #b1adae;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article:hover {
+    background-color: #a09c9d;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #120d0d;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+ol {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+input:not([type="submit"]):not([type="radio"]) {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
