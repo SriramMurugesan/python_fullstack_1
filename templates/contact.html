@@ -20,6 +20,7 @@
         <a href="/courses">Courses</a>
         <a href="/trainers">Trainers</a>
         {% if session.get('user_name') %}
+            <a href="/todos">My To-Do List</a>
             <span class="user-welcome">Welcome, {{ session.get('user_name') }}!</span>
             <a href="/logout">Logout</a>
         {% else %}
