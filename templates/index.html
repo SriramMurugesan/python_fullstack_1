@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <title>Python FullStack</title>
 </head>
 
@@ -28,7 +28,7 @@
             <h2 id="welcome">Welcome to NRIIT Learning Managemnet System</h2>
             <p>We are a leading provider of online learning solutions, offering a wide range of courses and training
                 programs to help individuals and organizations achieve their learning goals. </p>
-            <img src="images/image.jpg" alt="Banner" width="500" class="banner">
+            <img src="{{url_for('static', filename='images/image.jpg')}}" alt="Banner" width="500" class="banner">
         </section>
         <section>
             <h2>Why Choose us?</h2>
@@ -60,7 +60,7 @@
         <a href="#">Instagram</a> |
         <a href="#">LinkedIn</a>
     </footer>
-<script src="js/script.js"></script>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>
