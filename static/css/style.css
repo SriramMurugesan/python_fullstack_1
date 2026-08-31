@@ -141,3 +141,8 @@ input:not([type="submit"]):not([type="radio"]) {
     border-radius: 5px;
     font-size: 16px;
 }
+
+.user-welcome {
+    color: #4CAF50;
+    font-weight: bold;
+}
