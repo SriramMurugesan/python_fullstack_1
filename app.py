@@ -64,14 +64,12 @@ def api_register():
     dob=data.get("dob")
     gender=data.get("gender")
     courses=data.get("courses")
-
     conn=get_db_connection()
     cursor=conn.cursor()
     cursor.execute("INSERT INTO users (name, email, password, dob, gender, courses) VALUES (?, ?, ?, ?, ?, ?)", (name, email, password, dob, gender, courses))
     conn.commit()
     conn.close()
-
     return jsonify({"message": "User registered successfully"}), 201
-
+    
 if __name__=="__main__":
     app.run(debug=True)
