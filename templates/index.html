@@ -17,8 +17,13 @@
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
             <a href="/courses">Courses</a>
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
+            {% if session.get('user_id') %}
+                <p>Welcome, {{ session.get('user_name') }}!</p>
+                <a href="/logout">Logout</a>
+            {% else %}
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            {% endif %}
             <a href="/trainers">Trainers</a>
         </nav>
         <hr>
